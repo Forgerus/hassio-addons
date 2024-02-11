@@ -6,7 +6,7 @@
     "url": "https://github.com/Forgerus/hassio-addons/tree/master/caddy_proxy",
     "startup": "system",
     "boot": "auto",
-    "image": "bestlibre/{arch}-caddy-proxy",
+    "image": "Forgerus/{arch}-caddy-proxy",
     "arch": ["armv7", "armhf", "amd64", "aarch64", "i386"],
     "options": {
 	"homeassistant": "homeassistant.domain.tld",
