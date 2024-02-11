@@ -12,7 +12,7 @@ fi
 
 if [ -n "$homeassistant" ];
 then
-    echo "{\"vhosts\":[{\"vhost\":\"$homeassistant\", \"port\":\"8123\"}]}" | python3 /mustache.py /templates/vhost.mustache - >> /tmp/caddy.conf
+    echo "{\"vhosts\":[{\"vhost\":\"$homeassistant\", \"remote\":\"192.168.250.252\", \"port\":\"8123\"}]}" | python3 /mustache.py /templates/vhost.mustache - >> /tmp/caddy.conf
 fi
 
 python3 /mustache.py /templates/vhost.mustache /data/options.json >> /tmp/caddy.conf
