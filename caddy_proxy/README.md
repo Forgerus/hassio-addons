@@ -26,7 +26,7 @@ Internal port (ie 8123 for homeassistant, 3000 for grafana)
 
 #### remote (str)
 
-Ip or url for the proxified server. If not set default to 172.17.0.1 (docker host).
+Ip or url for the proxified server. If not set default to 192.168.250.252 (docker host).
 
 #### user (str)
 
@@ -49,7 +49,7 @@ Each string must have the following format :
 with :
 
 - **path** (str): path to be proxify (ie `/api/`).
-- **remote** (str): Ip or url for the proxified server. Use `172.17.0.1` for the docker host.
+- **remote** (str): Ip or url for the proxified server. Use `192.168.250.252` for the docker host.
 - **port** (str): Internal port.
 
 ### email (email)
